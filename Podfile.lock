@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (7.1.1)
+  - MBProgressHUD (1.2.0)
+  - Starscream (4.0.8)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - Starscream
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - Starscream
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
+
+PODFILE CHECKSUM: 7df0cc459c61909a439911546be27bc9dd489293
+
+COCOAPODS: 1.15.2
