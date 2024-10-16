@@ -11,6 +11,8 @@ Watch till the end for valuable insights and unique implementation techniques!
 
 LinkedIn:  https://www.linkedin.com/in/navbot-frank/
 
+Youtube: https://www.youtube.com/watch?v=eWsvwTnscBA
+
 See my previous demo:
 Real-time API on Python: https://www.youtube.com/watch?v=lOypO-ngBJ8&t=3s
 
