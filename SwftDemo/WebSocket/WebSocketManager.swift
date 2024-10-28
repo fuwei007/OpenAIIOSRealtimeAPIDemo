@@ -20,7 +20,7 @@ class WebSocketManager: NSObject, WebSocketDelegate{
     func connectWebSocketOfOpenAi(){
         if connected_status == "not_connected"{
             var request = URLRequest(url: URL(string: "wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-10-01")!)
-            // request.addValue("Bearer Your OPEN AI key", forHTTPHeaderField: "Authorization")
+            request.addValue("Bearer Your key", forHTTPHeaderField: "Authorization")
             request.addValue("realtime=v1", forHTTPHeaderField: "OpenAI-Beta")
         
             socket = WebSocket(request: request)
@@ -61,6 +61,9 @@ class WebSocketManager: NSObject, WebSocketDelegate{
                 print("Reconnect suggested: \(isSuggested)")
             case .cancelled:
                 print("WebSocket was cancelled")
+                self.connected_status = "not_connected"
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
+                
             case .peerClosed:
                 print("WebSocket peer closed")
         }

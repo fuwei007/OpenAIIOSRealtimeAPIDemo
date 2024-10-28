@@ -12,10 +12,12 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
     private override init(){
         super.init()
     }
-    
-
     //MARK: 1.Start collecting audio data.
     func startRecordAudio(){
+        if audioUnit != nil{
+            AudioOutputUnitStart(audioUnit!)
+            return
+        }
         //0.1.Check microphone permission.：
         AVAudioSession.sharedInstance().requestRecordPermission { granted in
             if !granted {
@@ -29,9 +31,9 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
             let audioSession = AVAudioSession.sharedInstance()
             try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetooth])
             try audioSession.setActive(true)
-            print("set AVAudioSession1 ok")
+            print("Set up AVAudioSession1 success")
         } catch {
-            print("set AVAudioSession ok2: \(error)")
+            print("Set up AVAudioSession1 fail: \(error)")
         }
         //1.Initialize.
         var audioComponentDesc = AudioComponentDescription()
@@ -76,7 +78,7 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
         AudioUnitSetProperty(audioUnit,
                              kAudioUnitProperty_StreamFormat,
                              kAudioUnitScope_Output,
-                             1, // input bus
+                             1, // 输入bus
                              &audioFormat,
                              UInt32(MemoryLayout<AudioStreamBasicDescription>.size)
         )
@@ -104,7 +106,7 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
         //5.Initialize and start.
         if AudioUnitUninitialize(audioUnit) == noErr {
             print("Initialize Audio Unit--Success")
-            //start Audio Unit： AudioOutputUnitStart
+            //启动Audio Unit： 使用AudioOutputUnitStart 会同时启动输入和输出
             if AudioOutputUnitStart(audioUnit) == noErr{
                 print("Start Audio Unit--Success")
             }else{
@@ -164,6 +166,19 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
                 RecordAudioManager.shared.sendMessageOneByOne()
             }
             RecordAudioManager.shared.count += 1
+            
+            //Monitor Audio Volume Data
+            //RMS：0（min）-1(max)
+            var rmsValue: Float = 0.0
+            for frame in 0..<frameCount {
+                let sample = inputData?[frame] ?? 0
+                int16_array.append(sample)
+                let normalizedSample = Float(sample) / Float(Int16.max)
+                rmsValue += normalizedSample * normalizedSample
+            }
+            rmsValue = sqrt(rmsValue / Float(frameCount))
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showMonitorAudioDataView"), object: ["rmsValue": Float(rmsValue)])
+            
         } else {
             print("AudioUnitRender failed with status: \(status)")
         }
@@ -187,13 +202,23 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
                     if self.local_record_Array.count > 0{
                         self.local_record_Array.removeFirst()
                         self.sendMessageOneByOne()
-                        //print("send message success---\(sequenceNumber)")
+                        print("send message success---\(sequenceNumber)")
                     }
                 }
             }
         }
     }
-
-    
+    //MARK: 3.Pause captrue audio
+    func pauseCaptureAudio(){
+        DispatchQueue.main.async {
+            guard let audioUnit = self.audioUnit else{return}
+            //Pause
+            if AudioOutputUnitStop(audioUnit) == noErr{
+                print("Pause AudioUnit Success")
+            }else{
+                print("Pause AudioUnit Fail")
+            }
+        }
+    }
 
 }

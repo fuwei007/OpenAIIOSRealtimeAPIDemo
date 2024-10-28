@@ -96,8 +96,6 @@ class PlayAudioCotinuouslyManager: NSObject {
         playerNode.scheduleBuffer(buffer) {
             if self.audio_event_Queue.count > 0{
                 self.audio_event_Queue.removeFirst()
-            }else{
-               
             }
             self.playNextAudio()
         }
