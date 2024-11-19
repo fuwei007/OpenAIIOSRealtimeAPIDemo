@@ -20,7 +20,8 @@ class WebSocketManager: NSObject, WebSocketDelegate{
     func connectWebSocketOfOpenAi(){
         if connected_status == "not_connected"{
             var request = URLRequest(url: URL(string: "wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-10-01")!)
-            request.addValue("Your OpenAI Api Key", forHTTPHeaderField: "Authorization")
+            //You shoule complete the key below.
+            request.addValue("Your Open AI Key", forHTTPHeaderField: "Authorization")
             request.addValue("realtime=v1", forHTTPHeaderField: "OpenAI-Beta")
         
             socket = WebSocket(request: request)

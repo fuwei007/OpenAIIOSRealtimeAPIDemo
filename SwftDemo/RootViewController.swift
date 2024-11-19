@@ -92,7 +92,7 @@ class RootViewController: UIViewController {
     @objc func showMonitorAudioDataView(notification: Notification){
         if let dict = notification.object as? [String: Any] {
             if let rmsValue = dict["rmsValue"] as? Float{
-                print("此时的音频音量为:\(rmsValue)")
+                //print("This volume is:\(rmsValue)")
                 DispatchQueue.main.async {
                     self.audioVolumeView.updateCircles(with: rmsValue)
                 }

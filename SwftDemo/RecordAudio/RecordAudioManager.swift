@@ -204,7 +204,7 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
                     if self.local_record_Array.count > 0{
                         self.local_record_Array.removeFirst()
                         self.sendMessageOneByOne()
-                        print("send message success---\(sequenceNumber)")
+                        print("send message of audio data success---\(sequenceNumber)")
                     }
                 }
             }
