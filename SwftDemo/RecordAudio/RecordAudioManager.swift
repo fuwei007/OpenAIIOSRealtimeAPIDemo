@@ -15,6 +15,8 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
     //MARK: 1.Start collecting audio data.
     func startRecordAudio(){
         if audioUnit != nil{
+            RecordAudioManager.shared.count = 0
+            RecordAudioManager.shared.local_record_Array = [[String: Any]]()
             AudioOutputUnitStart(audioUnit!)
             return
         }

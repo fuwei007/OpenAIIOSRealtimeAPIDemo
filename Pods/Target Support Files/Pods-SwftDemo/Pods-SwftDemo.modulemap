@@ -1,0 +1,6 @@
+module Pods_SwftDemo {
+  umbrella header "Pods-SwftDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		267894D1603CEEBE0EC013E3 /* libPods-SwftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDBBE966F63984A7B1824DD /* libPods-SwftDemo.a */; };
 		A9097BCC2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9097BCB2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift */; };
-		A978CEA52B06EB7100DCB9C5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A978CEA32B06EB7100DCB9C5 /* RootViewController.swift */; };
-		A978CEA62B06EB7100DCB9C5 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A978CEA42B06EB7100DCB9C5 /* RootViewController.xib */; };
 		A98CE87E2C64675A00489AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98CE87D2C64675A00489AD9 /* Assets.xcassets */; };
+		A98D89792CDC9DEA00389BF4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D89772CDC9DEA00389BF4 /* RootViewController.swift */; };
+		A98D897A2CDC9DEA00389BF4 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98D89782CDC9DEA00389BF4 /* RootViewController.xib */; };
+		A9AA53092CC6363B00493649 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AA53082CC6363B00493649 /* AudioVisualizerView.swift */; };
 		A9AC386E2B04B35E0088D5BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC386D2B04B35E0088D5BB /* AppDelegate.swift */; };
 		A9AC387A2B04B35F0088D5BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC38782B04B35F0088D5BB /* LaunchScreen.storyboard */; };
 		A9FFC45B2CB7B799006CBCB7 /* MaciroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFC4582CB7B799006CBCB7 /* MaciroDefine.swift */; };
@@ -24,9 +25,10 @@
 		A1286BCB17E4CC4715B51B0F /* Pods-SwftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwftDemo/Pods-SwftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A565352AF458640234995DA2 /* Pods-SwftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwftDemo/Pods-SwftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A9097BCB2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioCotinuouslyManager.swift; sourceTree = "<group>"; };
-		A978CEA32B06EB7100DCB9C5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		A978CEA42B06EB7100DCB9C5 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		A98CE87D2C64675A00489AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A98D89772CDC9DEA00389BF4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A98D89782CDC9DEA00389BF4 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		A9AA53082CC6363B00493649 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
 		A9AC386A2B04B35E0088D5BB /* SwftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC386D2B04B35E0088D5BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AC38792B04B35F0088D5BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			path = PlayAudio;
 			sourceTree = "<group>";
 		};
+		A9AA53072CC635E800493649 /* AudioVolumeView */ = {
+			isa = PBXGroup;
+			children = (
+				A9AA53082CC6363B00493649 /* AudioVisualizerView.swift */,
+			);
+			path = AudioVolumeView;
+			sourceTree = "<group>";
+		};
 		A9AC38612B04B35D0088D5BB = {
 			isa = PBXGroup;
 			children = (
@@ -98,15 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				A9AC386D2B04B35E0088D5BB /* AppDelegate.swift */,
-				A978CEA32B06EB7100DCB9C5 /* RootViewController.swift */,
-				A978CEA42B06EB7100DCB9C5 /* RootViewController.xib */,
 				A9AC38782B04B35F0088D5BB /* LaunchScreen.storyboard */,
+				A98D89772CDC9DEA00389BF4 /* RootViewController.swift */,
+				A98D89782CDC9DEA00389BF4 /* RootViewController.xib */,
 				A9FFC45F2CB7B7C6006CBCB7 /* SwftDemo-Bridging-Header.h */,
+				A98CE87D2C64675A00489AD9 /* Assets.xcassets */,
 				A9FFC4642CB7B95F006CBCB7 /* WebSocket */,
 				A9FFC4662CB7BE39006CBCB7 /* RecordAudio */,
 				A9097BCA2CB7E1E300A5EE5A /* PlayAudio */,
 				A9FFC4572CB7B773006CBCB7 /* Extention */,
-				A98CE87D2C64675A00489AD9 /* Assets.xcassets */,
+				A9AA53072CC635E800493649 /* AudioVolumeView */,
 				A9AC387B2B04B35F0088D5BB /* Info.plist */,
 			);
 			path = SwftDemo;
@@ -200,7 +211,7 @@
 			files = (
 				A9AC387A2B04B35F0088D5BB /* LaunchScreen.storyboard in Resources */,
 				A98CE87E2C64675A00489AD9 /* Assets.xcassets in Resources */,
-				A978CEA62B06EB7100DCB9C5 /* RootViewController.xib in Resources */,
+				A98D897A2CDC9DEA00389BF4 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AC386E2B04B35E0088D5BB /* AppDelegate.swift in Sources */,
-				A978CEA52B06EB7100DCB9C5 /* RootViewController.swift in Sources */,
 				A9FFC4682CB7BEFD006CBCB7 /* RecordAudioManager.swift in Sources */,
 				A9FFC45C2CB7B799006CBCB7 /* Extention+MBProgress.swift in Sources */,
 				A9097BCC2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift in Sources */,
 				A9FFC45B2CB7B799006CBCB7 /* MaciroDefine.swift in Sources */,
 				A9FFC4652CB7B95F006CBCB7 /* WebSocketManager.swift in Sources */,
+				A98D89792CDC9DEA00389BF4 /* RootViewController.swift in Sources */,
+				A9AA53092CC6363B00493649 /* AudioVisualizerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +412,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8XJ94LB4SB;
+				DEVELOPMENT_TEAM = GGPE925FNA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwftDemo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RealTimeDemo;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_CFBundleDisplayName = Ai_me;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App Need";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -414,8 +426,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zy.com.SwftDemo;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jinfulai.com.AimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SwftDemo/SwftDemo-Bridging-Header.h";
@@ -434,11 +446,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8XJ94LB4SB;
+				DEVELOPMENT_TEAM = GGPE925FNA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwftDemo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RealTimeDemo;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_CFBundleDisplayName = Ai_me;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App Need";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -448,8 +460,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zy.com.SwftDemo;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jinfulai.com.AimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SwftDemo/SwftDemo-Bridging-Header.h";
