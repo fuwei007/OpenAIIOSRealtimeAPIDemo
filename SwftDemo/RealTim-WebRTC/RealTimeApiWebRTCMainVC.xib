@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RealTimeApiWebRTCMainVC" customModule="SwftDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="myVolumeView" destination="KpJ-Le-wqt" id="XXs-fn-x73"/>
+                <outlet property="statusButton" destination="iuR-HO-vHC" id="55X-SX-ctY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-Cf-wFz">
+                    <rect key="frame" x="20" y="59" width="62" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="2ge-Fx-578"/>
+                        <constraint firstAttribute="width" constant="62" id="AtJ-IA-z8I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBackButton:" destination="-1" eventType="touchUpInside" id="lux-ir-gUt"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-Le-wqt">
+                    <rect key="frame" x="0.0" y="288.66666666666669" width="393" height="300.00000000000006"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="3pa-uH-dQf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuR-HO-vHC">
+                    <rect key="frame" x="30" y="114" width="333" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AkW-4y-fKY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Start With WebRTC">
+                        <color key="titleColor" systemColor="systemBlueColor"/>
+                    </state>
+                    <connections>
+                        <action selector="clickStatusButton:" destination="-1" eventType="touchUpInside" id="J6s-5j-AYA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KpJ-Le-wqt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3TT-RX-4Ae"/>
+                <constraint firstItem="KpJ-Le-wqt" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="4FX-Wf-bXq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iuR-HO-vHC" secondAttribute="trailing" constant="30" id="GA0-X4-NKV"/>
+                <constraint firstItem="Wge-Cf-wFz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ij3-ra-jcM"/>
+                <constraint firstItem="iuR-HO-vHC" firstAttribute="top" secondItem="Wge-Cf-wFz" secondAttribute="bottom" constant="20" id="Rj9-Uu-Me4"/>
+                <constraint firstItem="Wge-Cf-wFz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hRg-Gk-kow"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KpJ-Le-wqt" secondAttribute="trailing" id="pbt-rG-S1J"/>
+                <constraint firstItem="iuR-HO-vHC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="qNe-NR-Q0R"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
