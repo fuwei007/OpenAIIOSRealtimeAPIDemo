@@ -1,24 +1,28 @@
 PODS:
+  - GoogleWebRTC (1.1.32000)
   - IQKeyboardManagerSwift (7.1.1)
   - MBProgressHUD (1.2.0)
   - Starscream (4.0.8)
 
 DEPENDENCIES:
+  - GoogleWebRTC
   - IQKeyboardManagerSwift
   - MBProgressHUD
   - Starscream
 
 SPEC REPOS:
   trunk:
+    - GoogleWebRTC
     - IQKeyboardManagerSwift
     - MBProgressHUD
     - Starscream
 
 SPEC CHECKSUMS:
+  GoogleWebRTC: 4d261187b30512efdb711d21fa961a6adf138717
   IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
 
-PODFILE CHECKSUM: 7df0cc459c61909a439911546be27bc9dd489293
+PODFILE CHECKSUM: 80f9dca7b05274ee2433240a4520eedd06a422dd
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

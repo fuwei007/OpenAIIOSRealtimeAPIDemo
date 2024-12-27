@@ -116,7 +116,8 @@ class RealTimeApiWebRTCMainVC: UIViewController, RTCPeerConnectionDelegate, RTCD
             failBlock()
             return
         }
-        let OPENAI_API_KEY = ""
+        //MARK: You must replace the parameter here with your OpenAI key.
+        let OPENAI_API_KEY = "*******************"
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("Bearer \(OPENAI_API_KEY)", forHTTPHeaderField: "Authorization")

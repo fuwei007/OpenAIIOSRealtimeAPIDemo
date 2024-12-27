@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		267894D1603CEEBE0EC013E3 /* libPods-SwftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDBBE966F63984A7B1824DD /* libPods-SwftDemo.a */; };
 		A9097BCC2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9097BCB2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift */; };
+		A93881072D1D313900CF5658 /* RealTimeApiWebRTCMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93881062D1D313900CF5658 /* RealTimeApiWebRTCMainVC.xib */; };
+		A93881082D1D313900CF5658 /* RealTimeApiWebRTCMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93881052D1D313900CF5658 /* RealTimeApiWebRTCMainVC.swift */; };
 		A98CE87E2C64675A00489AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98CE87D2C64675A00489AD9 /* Assets.xcassets */; };
-		A98D89792CDC9DEA00389BF4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D89772CDC9DEA00389BF4 /* RootViewController.swift */; };
-		A98D897A2CDC9DEA00389BF4 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98D89782CDC9DEA00389BF4 /* RootViewController.xib */; };
+		A98D89792CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D89772CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.swift */; };
+		A98D897A2CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98D89782CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.xib */; };
 		A9AA53092CC6363B00493649 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AA53082CC6363B00493649 /* AudioVisualizerView.swift */; };
 		A9AC386E2B04B35E0088D5BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC386D2B04B35E0088D5BB /* AppDelegate.swift */; };
 		A9AC387A2B04B35F0088D5BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AC38782B04B35F0088D5BB /* LaunchScreen.storyboard */; };
+		A9EAFEB12D1D2C4E006A1930 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EAFEB02D1D2C4E006A1930 /* RootViewController.xib */; };
+		A9EAFEB22D1D2C4E006A1930 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFEAF2D1D2C4E006A1930 /* RootViewController.swift */; };
 		A9FFC45B2CB7B799006CBCB7 /* MaciroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFC4582CB7B799006CBCB7 /* MaciroDefine.swift */; };
 		A9FFC45C2CB7B799006CBCB7 /* Extention+MBProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFC4592CB7B799006CBCB7 /* Extention+MBProgress.swift */; };
 		A9FFC4652CB7B95F006CBCB7 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFC4632CB7B95F006CBCB7 /* WebSocketManager.swift */; };
@@ -25,14 +29,18 @@
 		A1286BCB17E4CC4715B51B0F /* Pods-SwftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwftDemo/Pods-SwftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A565352AF458640234995DA2 /* Pods-SwftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwftDemo/Pods-SwftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A9097BCB2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioCotinuouslyManager.swift; sourceTree = "<group>"; };
+		A93881052D1D313900CF5658 /* RealTimeApiWebRTCMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeApiWebRTCMainVC.swift; sourceTree = "<group>"; };
+		A93881062D1D313900CF5658 /* RealTimeApiWebRTCMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeApiWebRTCMainVC.xib; sourceTree = "<group>"; };
 		A98CE87D2C64675A00489AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A98D89772CDC9DEA00389BF4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		A98D89782CDC9DEA00389BF4 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		A98D89772CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeApiWebSocketMainVC.swift; sourceTree = "<group>"; };
+		A98D89782CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeApiWebSocketMainVC.xib; sourceTree = "<group>"; };
 		A9AA53082CC6363B00493649 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
 		A9AC386A2B04B35E0088D5BB /* SwftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AC386D2B04B35E0088D5BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AC38792B04B35F0088D5BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AC387B2B04B35F0088D5BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EAFEAF2D1D2C4E006A1930 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A9EAFEB02D1D2C4E006A1930 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		A9FFC4582CB7B799006CBCB7 /* MaciroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaciroDefine.swift; sourceTree = "<group>"; };
 		A9FFC4592CB7B799006CBCB7 /* Extention+MBProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extention+MBProgress.swift"; sourceTree = "<group>"; };
 		A9FFC45F2CB7B7C6006CBCB7 /* SwftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -78,6 +86,15 @@
 			path = PlayAudio;
 			sourceTree = "<group>";
 		};
+		A93881022D1D302300CF5658 /* RealTim-WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				A93881052D1D313900CF5658 /* RealTimeApiWebRTCMainVC.swift */,
+				A93881062D1D313900CF5658 /* RealTimeApiWebRTCMainVC.xib */,
+			);
+			path = "RealTim-WebRTC";
+			sourceTree = "<group>";
+		};
 		A9AA53072CC635E800493649 /* AudioVolumeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +126,29 @@
 			children = (
 				A9AC386D2B04B35E0088D5BB /* AppDelegate.swift */,
 				A9AC38782B04B35F0088D5BB /* LaunchScreen.storyboard */,
-				A98D89772CDC9DEA00389BF4 /* RootViewController.swift */,
-				A98D89782CDC9DEA00389BF4 /* RootViewController.xib */,
+				A9EAFEAF2D1D2C4E006A1930 /* RootViewController.swift */,
+				A9EAFEB02D1D2C4E006A1930 /* RootViewController.xib */,
+				A93881022D1D302300CF5658 /* RealTim-WebRTC */,
+				A9EAFEB32D1D2C5B006A1930 /* RealTime-WebSocket */,
+				A9FFC4572CB7B773006CBCB7 /* Extention */,
 				A9FFC45F2CB7B7C6006CBCB7 /* SwftDemo-Bridging-Header.h */,
 				A98CE87D2C64675A00489AD9 /* Assets.xcassets */,
-				A9FFC4642CB7B95F006CBCB7 /* WebSocket */,
-				A9FFC4662CB7BE39006CBCB7 /* RecordAudio */,
-				A9097BCA2CB7E1E300A5EE5A /* PlayAudio */,
-				A9FFC4572CB7B773006CBCB7 /* Extention */,
-				A9AA53072CC635E800493649 /* AudioVolumeView */,
 				A9AC387B2B04B35F0088D5BB /* Info.plist */,
 			);
 			path = SwftDemo;
+			sourceTree = "<group>";
+		};
+		A9EAFEB32D1D2C5B006A1930 /* RealTime-WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A98D89772CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.swift */,
+				A98D89782CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.xib */,
+				A9FFC4642CB7B95F006CBCB7 /* WebSocket */,
+				A9FFC4662CB7BE39006CBCB7 /* RecordAudio */,
+				A9097BCA2CB7E1E300A5EE5A /* PlayAudio */,
+				A9AA53072CC635E800493649 /* AudioVolumeView */,
+			);
+			path = "RealTime-WebSocket";
 			sourceTree = "<group>";
 		};
 		A9FFC4572CB7B773006CBCB7 /* Extention */ = {
@@ -160,6 +188,7 @@
 				A9AC38672B04B35E0088D5BB /* Frameworks */,
 				A9AC38682B04B35E0088D5BB /* Resources */,
 				96DEAFD88B70806E8B9CF5E0 /* [CP] Copy Pods Resources */,
+				2D2FE882682CCFDF37E7E4AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,7 +240,9 @@
 			files = (
 				A9AC387A2B04B35F0088D5BB /* LaunchScreen.storyboard in Resources */,
 				A98CE87E2C64675A00489AD9 /* Assets.xcassets in Resources */,
-				A98D897A2CDC9DEA00389BF4 /* RootViewController.xib in Resources */,
+				A9EAFEB12D1D2C4E006A1930 /* RootViewController.xib in Resources */,
+				A93881072D1D313900CF5658 /* RealTimeApiWebRTCMainVC.xib in Resources */,
+				A98D897A2CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +271,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2D2FE882682CCFDF37E7E4AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwftDemo/Pods-SwftDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwftDemo/Pods-SwftDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwftDemo/Pods-SwftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		96DEAFD88B70806E8B9CF5E0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,11 +314,13 @@
 			files = (
 				A9AC386E2B04B35E0088D5BB /* AppDelegate.swift in Sources */,
 				A9FFC4682CB7BEFD006CBCB7 /* RecordAudioManager.swift in Sources */,
+				A9EAFEB22D1D2C4E006A1930 /* RootViewController.swift in Sources */,
 				A9FFC45C2CB7B799006CBCB7 /* Extention+MBProgress.swift in Sources */,
 				A9097BCC2CB7E6F100A5EE5A /* PlayAudioCotinuouslyManager.swift in Sources */,
 				A9FFC45B2CB7B799006CBCB7 /* MaciroDefine.swift in Sources */,
+				A93881082D1D313900CF5658 /* RealTimeApiWebRTCMainVC.swift in Sources */,
 				A9FFC4652CB7B95F006CBCB7 /* WebSocketManager.swift in Sources */,
-				A98D89792CDC9DEA00389BF4 /* RootViewController.swift in Sources */,
+				A98D89792CDC9DEA00389BF4 /* RealTimeApiWebSocketMainVC.swift in Sources */,
 				A9AA53092CC6363B00493649 /* AudioVisualizerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GGPE925FNA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwftDemo/Info.plist;
@@ -445,7 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GGPE925FNA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwftDemo/Info.plist;
